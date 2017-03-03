@@ -1,0 +1,81 @@
+// ============================================
+// Helpers
+// ============================================
+
+
+// Mixins
+// ============================================
+
+// Create @font-face from a linked (TypeKit, Google, etc.) web font
+// @mixin FontFace--linked($font_family, $font_weight: normal, $font_style: normal) {
+//     @font-face {
+//         font-family:  $font_family;
+//         font-weight:  $font_weight;
+//         font-style:   $font_style;
+//     }
+// }
+
+// Create @font-face from a hosted web font
+@mixin FontFace--hosted($path_to_webfont, $font_family, $font_weight: normal, $font_style: normal) {
+    @font-face {
+        font-family:  $font_family;
+        font-weight:  $font_weight;
+        font-style:   $font_style;
+
+        src: url('#{$path_to_webfont}.eot');
+        src: url('#{$path_to_webfont}.eot?#iefix')             format('embedded-opentype'),
+             url('#{$path_to_webfont}.woff')                   format('woff'),
+             url('#{$path_to_webfont}.ttf')                    format('truetype'),
+             url('#{$path_to_webfont}.svg##{$font-family}')    format('svg');
+    }
+}
+
+
+// Utility Classes & Extendable Placeholders
+// ============================================
+
+// Clears floated content
+
+.h-clear,
+%h-clear {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+// Alignment
+
+.h-align--vertical {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+
+// Visibility
+
+.h-show { 
+  display: inherit; 
+}
+.h-hide { 
+  display: none;
+}
+
+// Type Casing
+
+.h-case--lower,
+%h-case-lower {
+    text-transform: lowercase;
+}
+.h-case--upper,
+%h-case--upper {
+    text-transform: uppercase;
+}
+
+// Other 
+
+.h-preventScroll,
+%h-preventScroll {
+    overflow: hidden;
+}

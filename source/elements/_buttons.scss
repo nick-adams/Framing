@@ -1,0 +1,47 @@
+// Buttons
+// -------------------------
+
+// Default HTML Element 
+// ============================================
+
+button  {
+  transition:         all #{$transition_medium};
+  -webkit-transition: all #{$transition_medium};
+  -moz-transition:    all #{$transition_medium};
+}
+
+// Classes
+// ============================================
+
+// Placeholder
+%button {
+  display: inline-block;
+  border-radius: $radius;
+  padding: 7px 20px;
+  margin: 0 5px;
+  min-width: 150px;
+  text-align: center;
+  text-decoration: none;
+
+  // Default Sizing
+  font: normal 1.6rem $font_sans;
+}
+
+  // Button Types
+  
+  .#{$namespace}btn-primary {
+      @extend %button;
+      
+      color: $white;
+      background-color: $primary_color;
+
+      &:hover {
+          background-color: $primary_color_tint;
+      }
+  }
+
+  // Button Sizes 
+
+  .#{$namespace}btn-small {
+      font: normal 1.2rem Trade;
+  }

@@ -1,0 +1,18 @@
+// ---
+// ---
+// ^ Uncomment for Jekyll
+
+// ============================================
+// Styles
+// ============================================
+
+// Theme (must come first)
+@import   'themes/default'; // you can replace this with your own
+
+// Base Styles
+@import   'base/normalize';
+@import   'base/globals';
+@import   'base/helpers';
+
+// Element Styles 
+@import   "elements/grid";

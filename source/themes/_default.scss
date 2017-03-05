@@ -1,7 +1,7 @@
 // ============================================
 // Theme: Default
 // This is the Default Theme containing all the 
-// settings and styles for generic use.
+// configurations and styles for generic use.
 // --------------------------------------------
 // Table of Contents:
 // - Configuration
@@ -18,13 +18,14 @@
 // - Colors
 // - Fonts
 // - Transitions
+// - Shadows
 // ============================================
 
 // Instructions:
 // All of these definitions are required, but they
-// can be customized and packaged as a new Theme by
-// copying this file, renaming it, and importing 
-// that into 'styles.scss'.
+// can be customized and packaged as a new theme by
+// duplicating this file, renaming it, and importing 
+// that into 'framing.scss' instead of this.
 
 
 // Configuration
@@ -141,8 +142,8 @@ $bp_xlarge:             120rem; // 1920px
 $color_white:           #ffffff;
 $color_black:           #000000;
 
-$color_light:           #333333;
-$color_dark:            #cccccc;
+$color_light:           #cccccc;
+$color_dark:            #333333;
 $color_primary:         #68a3d0;
 $color_primary_tint:    mix(white, $color_primary, 30%);
 $color_primary_shade:   mix(black, $color_primary, 30%);
@@ -169,12 +170,11 @@ $color_bg_dark:         $color_greyscale_08;
 $color_line_light:      $color_greyscale_02;
 $color_line_dark:       $color_greyscale_08;
 
-$color_link_light:      $color_primary;
-$color_link_dark:       $color_primary;
-
 $color_text_light:      $color_light;
 $color_text_dark:       $color_dark;
 
+$color_link_light:      $color_primary;
+$color_link_dark:       $color_primary;
 
 // Fonts
 // ============================================
@@ -189,6 +189,52 @@ $transition_slow:       '.4s ease';
 $transition_medium:     '.2s ease';
 $transition_fast:       '.1s ease';
 
+// Transitions
+// ============================================
 
+$shadow_color:          rgba(0, 0, 0, 0.15);
+$shadow:                1px 1px 2px 0 $shadow_color;
+
+
+// ============================================
+// DEPRECATED
+// ============================================
+
+// $color_white:           #ffffff;
+// $color_black:           #000000;
+
+// $color_light:           #333333;
+// $color_dark:            #cccccc;
+// $color_primary:         #68a3d0;
+// $color_primary_tint:    mix(white, $color_primary, 30%);
+// $color_primary_shade:   mix(black, $color_primary, 30%);
+// $color_secondary:       #d0011b;
+// $color_secondary_tint:  mix(white, $color_secondary, 30%);
+// $color_secondary_shade: mix(black, $color_secondary, 30%);
+// // $color_tertiary:      #d0011b;
+
+// $color_greyscale_00:    $color_white;
+// $color_greyscale_01:    mix(black, $color_white, 10%);
+// $color_greyscale_02:    mix(black, $color_white, 20%);
+// $color_greyscale_03:    mix(black, $color_white, 30%);
+// $color_greyscale_04:    mix(black, $color_white, 40%);
+// $color_greyscale_05:    mix(black, $color_white, 50%);
+// $color_greyscale_06:    mix(black, $color_white, 60%);
+// $color_greyscale_07:    mix(black, $color_white, 70%);
+// $color_greyscale_08:    mix(black, $color_white, 80%);
+// $color_greyscale_09:    mix(black, $color_white, 90%);
+// $color_greyscale_10:    $color_black;
+
+// $color_bg_light:        $color_greyscale_01;
+// $color_bg_dark:         $color_greyscale_08;
+
+// $color_line_light:      $color_greyscale_02;
+// $color_line_dark:       $color_greyscale_08;
+
+// $color_link_light:      $color_primary;
+// $color_link_dark:       $color_primary;
+
+// $color_text_light:      $color_light;
+// $color_text_dark:       $color_dark;
 
 

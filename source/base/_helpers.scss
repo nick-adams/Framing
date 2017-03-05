@@ -7,7 +7,7 @@
 // ============================================
 
 // Create @font-face from a linked (TypeKit, Google, etc.) web font
-// @mixin FontFace--linked($font_family, $font_weight: normal, $font_style: normal) {
+// @mixin fontFace--linked($font_family, $font_weight: normal, $font_style: normal) {
 //     @font-face {
 //         font-family:  $font_family;
 //         font-weight:  $font_weight;
@@ -16,7 +16,7 @@
 // }
 
 // Create @font-face from a hosted web font
-@mixin FontFace--hosted($path_to_webfont, $font_family, $font_weight: normal, $font_style: normal) {
+@mixin fontFace--hosted($path_to_webfont, $font_family, $font_weight: normal, $font_style: normal) {
     @font-face {
         font-family:  $font_family;
         font-weight:  $font_weight;
@@ -29,6 +29,10 @@
              url('#{$path_to_webfont}.svg##{$font-family}')    format('svg');
     }
 }
+
+// Functions
+// ============================================
+
 
 
 // Utility Classes & Extendable Placeholders

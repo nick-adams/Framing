@@ -418,13 +418,13 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
-  color: #cccccc;
+  color: #333333;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
 body.dark {
-  background-color: #cccccc;
-  color: #333333; }
+  background-color: #333333;
+  color: #cccccc; }
 
 html {
   transition: all .2s ease;
@@ -557,4 +557,4 @@ html {
   float: none;
   margin: 0 auto; }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=framing.css.map */

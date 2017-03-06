@@ -14,5 +14,11 @@
 @import   'base/globals';
 @import   'base/helpers';
 
+// Layout Styles 
+@import   "layout/grid";
+
 // Element Styles 
-@import   "elements/grid";
+@import   "elements/type";
+// @import   "elements/buttons";
+// @import   "elements/links";
+

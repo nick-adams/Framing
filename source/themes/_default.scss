@@ -55,17 +55,22 @@ $grid_width:            100%;
 $grid_gutter_width:     1.25rem;    // 20px
 
 // Type Sizes
-$font_size_base:        1rem;       // inherits root_size
-$line_height_base:      1.5rem; 
+$font_size_base:        1rem;       // 16px (inherits $root_size)
+$line_height_base:      1.5rem;     // 24px
 
-$font_size_xs:          0.5rem;
-$font_size_sm:          0.75rem;
-$font_size_md:          1.0em;
-$font_size_lg:          1.33rem;
-$font_size_xl:          1.5rem;
-$font_size_xl:          2.0rem;
-$font_size_xxl:         2.0rem;
+$font_size_scale:       1.333;      // Perfect Fourth
 
+$font_size_xs:          $font_size_base / $font_size_scale; // 0.75rem
+$font_size_sm:          $font_size_base / 1.142;            // 0.875rem (extra size)
+$font_size_md:          $font_size_base;                    // 1.0rem
+$font_size_lg:          $font_size_md  * $font_size_scale;  // 1.333rem
+$font_size_xl:          $font_size_lg  * $font_size_scale;  // 1.777rem
+$font_size_xxl:         $font_size_xl  * $font_size_scale;  // 2.369rem
+$font_size_xxxl:        $font_size_xxl * $font_size_scale;  // 3.157rem
+
+$letter_spacing_tight:  -0.5px;
+$letter_spacing_normal: 0px;
+$letter_spacing_wide:   1px;
 
 // Element Property Sizes
 $radius:                0.25em;     // 4px, will also be based on parent font-size (if defined).
@@ -105,16 +110,9 @@ $spacer_two:            2rem;     // 32px
 $spacer_three:          3rem;    // 48px
 $spacer_four:           4rem;    // 64px
 
-// Relative spacers based on parent font-size.
-// These are useful for component-level styles.
-$spacer_rel_eighth:     0.125em;
-$spacer_rel_quarter:    0.25em;
-$spacer_rel_half:       0.50em;
-$spacer_rel_one:        1em;
-$spacer_rel_oneandhalf: 1.5em;
-$spacer_rel_two:        2em;
-$spacer_rel_three:      3em;
-$spacer_rel_four:       4em;
+// Negative spacers
+$spacer_neg_one:        -1em;
+$spacer_neg_two:        -2em;
 
 
 // Breakpoints
@@ -181,6 +179,12 @@ $color_link_dark:       $color_primary;
 
 $font_serif:            Georgia, serif;
 $font_sans:             Helvetica, Arial, sans-serif;
+$font_system:           -apple-system,      // Safari for OS X and iOS (San Francisco)
+                        system-ui,          // Chrome >= 56 for OS X (San Francisco), Windows, Linux and Android
+                        BlinkMacSystemFont, // Chrome < 56 for OS X (San Francisco)
+                        "Segoe UI",         // Windows
+                        "Roboto",           // Android
+                        Helvetica, Arial, sans-serif !default; // Basic web fallback
 
 // Transitions
 // ============================================

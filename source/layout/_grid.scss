@@ -20,7 +20,7 @@ $grid_col_twothirds:         calc(((#{$grid_width} / 3) * 2));       // ~66%
 // ============================================
 
 .#{$namespace}grid {
-  @extend %h-clear;
+  @extend %u-clear;
   display: block;
   clear: both;
   width: $grid_width;
@@ -33,7 +33,7 @@ $grid_col_twothirds:         calc(((#{$grid_width} / 3) * 2));       // ~66%
 // ============================================
 
 .#{$namespace}grid--outsidegutters {
-  @extend %h-clear;
+  @extend %u-clear;
   display: block;
   clear: both;
   width: $grid_width;
@@ -75,7 +75,7 @@ $grid_col_twothirds:         calc(((#{$grid_width} / 3) * 2));       // ~66%
 // ============================================
 
 .#{$namespace}grid__row {
-  @extend %h-clear;
+  @extend %u-clear;
   width: 100%;
   padding: 0;
   margin-bottom: $grid_gutter_width;

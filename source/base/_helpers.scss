@@ -40,8 +40,8 @@
 
 // Clears floated content
 
-.h-clear,
-%h-clear {
+.u-clear,
+%u-clear {
     content: "";
     display: table;
     clear: both;
@@ -49,7 +49,7 @@
 
 // Alignment
 
-.h-align--vertical {
+.u-align--vertical {
     position: relative;
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -59,27 +59,27 @@
 
 // Visibility
 
-.h-show { 
+.u-show { 
   display: inherit; 
 }
-.h-hide { 
+.u-hide { 
   display: none;
 }
 
 // Type Casing
 
-.h-case--lower,
-%h-case-lower {
+.u-case--lower,
+%u-case-lower {
     text-transform: lowercase;
 }
-.h-case--upper,
-%h-case--upper {
+.u-case--upper,
+%u-case--upper {
     text-transform: uppercase;
 }
 
 // Other 
 
-.h-preventScroll,
-%h-preventScroll {
+.u-preventScroll,
+%u-preventScroll {
     overflow: hidden;
 }

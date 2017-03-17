@@ -68,7 +68,7 @@ html {
     padding: 0;
 }
 
-// Text
+// Text Blocks
 // ============================================
 
 .#{$namespace}text-body {
@@ -105,3 +105,27 @@ html {
     margin: $spacer_neg_one 0 0 0;
     padding: 0;
 }
+
+// Inline Text Elements
+// ============================================
+
+
+// Code Formatting
+// ============================================
+
+.code--inline {
+  color: $color_secondary;
+  font-family: $font-mono;
+  font-size: $font_size_xs;
+  font-weight: 400;
+  line-height: $line_height_base;
+  background-color: $color_bg_light;
+  border-radius: $radius;
+  padding: $spacer_quarter;
+  vertical-align: middle;
+}
+
+.code--block {
+  
+}
+

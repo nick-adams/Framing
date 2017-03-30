@@ -53,6 +53,13 @@ $page_max_width:        85.375rem;  // 1366px
 // Grid Sizes
 $grid_width:            100%;
 $grid_gutter_width:     1.25rem;    // 20px
+$grid_col_onewhole:     calc((#{$grid_width} / 1));         // ~100%
+$grid_col_onehalf:      calc((#{$grid_width} / 2));         // ~50%
+$grid_col_onequarter:   calc((#{$grid_width} / 4));         // ~25%
+$grid_col_threequarters: calc(((#{$grid_width} / 4) * 3));  // ~75%
+$grid_col_onethird:     calc((#{$grid_width} / 3));         // ~33%
+$grid_col_twothirds:    calc(((#{$grid_width} / 3) * 2));   // ~66%
+
 
 // Type Sizes
 $font_size_base:        1rem;       // 16px (inherits $root_size)
@@ -140,8 +147,8 @@ $bp_xlarge:             120rem; // 1920px
 $color_white:           #ffffff;
 $color_black:           #000000;
 
-$color_light:           #cccccc;
-$color_dark:            #333333;
+$color_light:           #ececec;
+$color_dark:            #252525;
 $color_primary:         #68a3d0;
 $color_primary_tint:    mix(white, $color_primary, 30%);
 $color_primary_shade:   mix(black, $color_primary, 30%);
@@ -150,7 +157,7 @@ $color_secondary_tint:  mix(white, $color_secondary, 30%);
 $color_secondary_shade: mix(black, $color_secondary, 30%);
 // $color_tertiary:      #d0011b;
 
-$color_greyscale_00:    $color_white;
+$color_greyscale_00:    mix(black, $color_white, 5%);
 $color_greyscale_01:    mix(black, $color_white, 10%);
 $color_greyscale_02:    mix(black, $color_white, 20%);
 $color_greyscale_03:    mix(black, $color_white, 30%);
@@ -160,9 +167,9 @@ $color_greyscale_06:    mix(black, $color_white, 60%);
 $color_greyscale_07:    mix(black, $color_white, 70%);
 $color_greyscale_08:    mix(black, $color_white, 80%);
 $color_greyscale_09:    mix(black, $color_white, 90%);
-$color_greyscale_10:    $color_black;
+$color_greyscale_10:    mix(black, $color_white, 95%);
 
-$color_bg_light:        $color_greyscale_01;
+$color_bg_light:        $color_greyscale_00;
 $color_bg_dark:         $color_greyscale_08;
 
 $color_line_light:      $color_greyscale_02;
@@ -173,6 +180,14 @@ $color_text_dark:       $color_dark;
 
 $color_link_light:      $color_primary;
 $color_link_dark:       $color_primary;
+
+// Borders
+// ============================================
+
+$border_thin-light:     solid 1px $color_greyscale_01;
+$border_thin-dark:      solid 1px $color_greyscale_09;
+$border_thick-light:    solid 3px $color_greyscale_01;
+$border_thick-dark:     solid 3px $color_greyscale_09;
 
 // Fonts
 // ============================================

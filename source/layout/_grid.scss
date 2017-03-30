@@ -3,23 +3,10 @@
 // ============================================
 
 
-// Grid Configuration
-// ============================================
-
-// Grid column variables
-$grid_col_onewhole:          calc((#{$grid_width} / 1));             // ~100%
-$grid_col_onehalf:           calc((#{$grid_width} / 2));             // ~50%
-$grid_col_onequarter:        calc((#{$grid_width} / 4));             // ~25%
-$grid_col_threequarters:     calc(((#{$grid_width} / 4) * 3));       // ~75%
-
-$grid_col_onethird:          calc((#{$grid_width} / 3));             // ~33%
-$grid_col_twothirds:         calc(((#{$grid_width} / 3) * 2));       // ~66%
-
-
 // Basic Grid Container
 // ============================================
 
-.#{$namespace}grid {
+.grid {
   @extend %u-clear;
   display: block;
   clear: both;
@@ -32,7 +19,7 @@ $grid_col_twothirds:         calc(((#{$grid_width} / 3) * 2));       // ~66%
 // Outside Guttered Grid Container
 // ============================================
 
-.#{$namespace}grid--outsidegutters {
+.grid--outsidegutters {
   @extend %u-clear;
   display: block;
   clear: both;
@@ -45,12 +32,12 @@ $grid_col_twothirds:         calc(((#{$grid_width} / 3) * 2));       // ~66%
 // Option: Make a Grid Container Fixed Width
 // ============================================
 
-.#{$namespace}grid--fixedwidth {
+.grid--fixedwidth {
   width: $page_max_width;
   margin: 0 auto;
 
   // Below the Medium Breakpoint
-  @media (min-width: $bp_medium) {
+  @media (max-width: $bp_medium) {
     width: $grid_width; // remove fixed width, make 100%
   }
 }
@@ -59,13 +46,13 @@ $grid_col_twothirds:         calc(((#{$grid_width} / 3) * 2));       // ~66%
 // Option: Add a Max Width to a Grid Container
 // ============================================
 
-.#{$namespace}grid--maxwidth {
+.grid--maxwidth {
   width: 100%;
   max-width: $page_max_width;
   margin: 0 auto;
 
   // Below the Medium Breakpoint
-  @media (min-width: $bp_medium) {
+  @media (max-width: $bp_medium) {
     max-width: $grid_width; // remove fixed width, make 100%
   }
 }
@@ -74,7 +61,7 @@ $grid_col_twothirds:         calc(((#{$grid_width} / 3) * 2));       // ~66%
 // Grid Row
 // ============================================
 
-.#{$namespace}grid__row {
+.grid__row {
   @extend %u-clear;
   width: 100%;
   padding: 0;
@@ -86,8 +73,8 @@ $grid_col_twothirds:         calc(((#{$grid_width} / 3) * 2));       // ~66%
 // ============================================
 // Use this modifier, if you want grid__col-- that don't have gutters
 
-.#{$namespace}grid__row--no-gutter-cols {
-  > [class*='#{$namespace}grid__col--'] { padding-right: 0; }
+.grid__row--no-gutter-cols {
+  > [class*='grid__col--'] { padding-right: 0; }
 }
 
 
@@ -97,7 +84,7 @@ $grid_col_twothirds:         calc(((#{$grid_width} / 3) * 2));       // ~66%
 // wrapper within the column, not the column itself since we're using paddings
 // for gutters.
 
-[class*='#{$namespace}grid__col--'] {
+[class*='grid__col--'] {
   float: left;
   padding-right: $grid_gutter_width;
   // min-height: 3rem;
@@ -114,47 +101,47 @@ $grid_col_twothirds:         calc(((#{$grid_width} / 3) * 2));       // ~66%
 // NOTE: Use combinations of these within the row to total the grid_width (100%).
 
 // One Whole
-.#{$namespace}grid__col--onewhole {
+.grid__col--onewhole {
   width: $grid_col_onewhole;
 }
 
 // Three Quarters
-.#{$namespace}grid__col--threequarters {
+.grid__col--threequarters {
   width: $grid_col_threequarters;
 }
 
 // One Half
-.#{$namespace}grid__col--onehalf {
+.grid__col--onehalf {
   width: $grid_col_onehalf;
 }
 
 // Two Thirds
-.#{$namespace}grid__col--twothirds {
+.grid__col--twothirds {
   width: $grid_col_twothirds;
 
   // At Small Breakpoint
-  @media (min-width: $bp_small) {
+  @media (max-width: $bp_small) {
     width: $grid_col_onewhole;
   }
 
 }
 
 // One Third
-.#{$namespace}grid__col--onethird {
+.grid__col--onethird {
   width: $grid_col_onethird;
 
   // At Small Breakpoint
-  @media (min-width: $bp_small) {
+  @media (max-width: $bp_small) {
     width: $grid_col_onehalf;
   }
 }
 
 // One Quarter
-.#{$namespace}grid__col--onequarter {
+.grid__col--onequarter {
   width: $grid_col_onequarter;
 
   // At Small Breakpoint
-  @media (min-width: $bp_small) {
+  @media (max-width: $bp_small) {
     width: $grid_col_onehalf;
   }
 }
@@ -165,37 +152,37 @@ $grid_col_twothirds:         calc(((#{$grid_width} / 3) * 2));       // ~66%
 // NOTE: Use one of these in additon to a column width to equal the grid_width (100%).
 
 // Indent by Two Thirds
-.#{$namespace}grid__col--indent-twothirds {
+.grid__col--indent-twothirds {
   margin-left: $grid_col_twothirds;
 
   // At Small Breakpoint
-  @media (min-width: $bp_small) {
+  @media (max-width: $bp_small) {
     margin-left: 0; //0%
   }
 }
 
 // Indent by One Half
-.#{$namespace}grid__col--indent-onehalf {
+.grid__col--indent-onehalf {
   margin-left: $grid_col_onehalf;
 
   // At Small Breakpoint
-  @media (min-width: $bp_small) {
+  @media (max-width: $bp_small) {
     margin-left: 0; //0%
   }
 }
 
 // Indent by One Third
-.#{$namespace}grid__col--indent-onethird {
+.grid__col--indent-onethird {
   margin-left: $grid_col_onethird;
 
   // At Small Breakpoint
-  @media (min-width: $bp_small) {
+  @media (max-width: $bp_small) {
     margin-left: 0; //0%
   }
 }
 
 // Indent by One Quarter
-.#{$namespace}grid__col--indent-onequarter {
+.grid__col--indent-onequarter {
   margin-left: $grid_col_onequarter;
 }
 
@@ -204,7 +191,19 @@ $grid_col_twothirds:         calc(((#{$grid_width} / 3) * 2));       // ~66%
 // ============================================
 // NOTE: No need to apply this to a '--onewhole' width column type.
 
-.#{$namespace}grid__col--centered {
+.grid__col--centered {
   float: none;
   margin: 0 auto;
+}
+
+
+// Content Alignment Options
+// ============================================
+// Note: left aligned content is the default.
+
+.grid__col--contentright {
+  text-align: right;
+}
+.grid__col--contentcenter {
+  text-align: center;
 }

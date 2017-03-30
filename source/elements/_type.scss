@@ -119,7 +119,8 @@ html {
   font-size: $font_size_xs;
   font-weight: 400;
   line-height: $line_height_base;
-  background-color: $color_bg_light;
+  background-color: $color_white;
+  border: $border_thin-light;
   border-radius: $radius;
   padding: $spacer_quarter;
   vertical-align: middle;

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Nick Adams">
+  <meta name="keywords" content="">
+  <meta name="description" content="My template">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Framing Demo</title>
+  
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">    
+<!--   <link rel="stylesheet" href="../framing.css">
+ -->  <link rel="stylesheet" href="assets/css/docs.css">
+
+  <!-- Web Fonts -->
+
+</head>
+
+<body>
+  
+  <header>
+    <h1>Framing</h1>
+    <h2>A simple, but theme-able starting-point for styling web content.</h2>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="index.html" title="Lorum ipsum dolor sit amet">Introduction</a></li>
+      <li><a href="conventions.html" title="Lorum ipsum dolor sit amet">Conventions</a></li>
+      <li><a href="theming.html" title="Lorum ipsum dolor sit amet">Themeing</a></li>
+      <li><a href="grid-layouts.html" title="Aliquam tincidunt mauris eu risus">Grid Layouts</a></li>
+      <li><a href="styles.html" title="Morbi in sem quis dui placerat ornare">Styles</a></li>
+      <li><a href="helpers.html" title="Aliquam tincidunt mauris eu risus">Helpers</a></li>
+      <li><a href="#" title="Aliquam tincidunt mauris eu risus">On Github</a></li>
+    </ul>
+  </nav>
+
+  <main>
+  
+    <section class="content-block" id="docs-grid">
+      <h1>Grid Layouts</h1>
+      <p>This is the grid</p>
+    </section> 
+
+    <section>
+      <h2>Breakpoints</h2>
+    </section>
+
+    <section>
+      <h2>Layouts</h2>
+
+      <div class="grid--maxwidth">
+        <h2>Basic Columns</h2>
+        <div class="grid__row">
+          <div class="grid__col--onewhole"><div class="grid-example"><code class="code--inline">.grid__col--onewhole</code></div></div>
+        </div>
+        <div class="grid__row">
+          <div class="grid__col--onehalf"><div class="grid-example"><code class="code--inline">.grid__col--onehalf</code></div></div>
+          <div class="grid__col--onehalf"><div class="grid-example"><code class="code--inline">.grid__col--onehalf</code></div></div>
+        </div>
+        <div class="grid__row">
+          <div class="grid__col--twothirds"><div class="grid-example"><code class="code--inline">.grid__col--twothirds</code></div></div>
+          <div class="grid__col--onethird"><div class="grid-example"><code class="code--inline">.grid__col--onethird</code></div></div>
+        </div>
+        <div class="grid__row">
+          <div class="grid__col--onethird"><div class="grid-example"><code class="code--inline">.grid__col--onethird</code></div></div>
+          <div class="grid__col--twothirds"><div class="grid-example"><code class="code--inline">.grid__col--twothirds</code></div></div>
+        </div>
+        <div class="grid__row">
+          <div class="grid__col--onethird"><div class="grid-example"><code class="code--inline">.grid__col--onethird</code></div></div>
+          <div class="grid__col--onethird"><div class="grid-example"><code class="code--inline">.grid__col--onethird</code></div></div>
+          <div class="grid__col--onethird"><div class="grid-example"><code class="code--inline">.grid__col--onethird</code></div></div>
+        </div>
+        <div class="grid__row">
+          <div class="grid__col--threequarters"><div class="grid-example"><code class="code--inline">.grid__col--threequarters</code></div></div>
+          <div class="grid__col--onequarter"><div class="grid-example"><code class="code--inline">.grid__col--onequarter</code></div></div>
+        </div>
+        <div class="grid__row">
+          <div class="grid__col--onequarter"><div class="grid-example"><code class="code--inline">.grid__col--onequarter</code></div></div>
+          <div class="grid__col--threequarters"><div class="grid-example"><code class="code--inline">.grid__col--threequarters</code></div></div>
+        </div>
+        <div class="grid__row">
+          <div class="grid__col--onequarter"><div class="grid-example"><code class="code--inline">.grid__col--onequarter</code></div></div>
+          <div class="grid__col--onequarter"><div class="grid-example"><code class="code--inline">.grid__col--onequarter</code></div></div>
+          <div class="grid__col--onequarter"><div class="grid-example"><code class="code--inline">.grid__col--onequarter</code></div></div>
+          <div class="grid__col--onequarter"><div class="grid-example"><code class="code--inline">.grid__col--onequarter</code></div></div>
+        </div>
+
+        <h2>Indented Columns</h2>
+        <div class="grid__row">
+          <div class="grid__col--onethird grid__col--indent-twothirds">
+            <div class="grid-example"><code class="code--inline">.grid__col--onethird</code><br/><code class="code--inline">.grid__col--indent-twothirds</code></div>
+          </div>
+        </div>
+        <div class="grid__row">
+          <div class="grid__col--onehalf grid__col--indent-onehalf">
+            <div class="grid-example"><code class="code--inline">.grid__col--onehalf</code><br/><code class="code--inline">.grid__col--indent-onehalf</code></div>
+          </div>
+        </div>
+        <div class="grid__row">
+          <div class="grid__col--twothirds grid__col--indent-onethird">
+            <div class="grid-example"><code class="code--inline">.grid__col--twothirds</code><br/><code class="code--inline">.grid__col--indent-onethird</code></div>
+          </div>
+        </div>
+        <div class="grid__row">
+          <div class="grid__col--threequarters grid__col--indent-onequarter">
+            <div class="grid-example"><code class="code--inline">.grid__col--threequarters</code><br/><code class="code--inline">.grid__col--indent-onequarter</code></div>
+          </div>
+        </div>
+      
+        <h2>Centered Columns</h2>
+        <p>Add '.grid__col--centered' to any column except '.grid__col--onewhole' (centering a one whole column is unnecessary).</p>
+
+        <div class="grid__row">
+          <div class="grid__col--onewhole">
+            <div class="grid-example"><code class="code--inline">.grid__col--onewhole</code></div>
+          </div>
+        </div>
+        <div class="grid__row">
+          <div class="grid__col--threequarters grid__col--centered">
+            <div class="grid-example"><code class="code--inline">.grid__col--threequarters</code><br/><code class="code--inline">.grid__col--centered</code></div>
+          </div>
+        </div>
+        <div class="grid__row">
+          <div class="grid__col--twothirds grid__col--centered">
+            <div class="grid-example"><code class="code--inline">.grid__col--twothirds</code><br/><code class="code--inline">.grid__col--centered</code></div>
+          </div>
+        </div>
+        <div class="grid__row">
+          <div class="grid__col--onehalf grid__col--centered">
+            <div class="grid-example"><code class="code--inline">.grid__col--onehalf</code><br/><code class="code--inline">.grid__col--centered</code></div>
+          </div>
+        </div>
+        <div class="grid__row">
+          <div class="grid__col--onethird grid__col--centered">
+            <div class="grid-example"><code class="code--inline">.grid__col--onethird</code><br/><code class="code--inline">.grid__col--centered</code></div>
+          </div>
+        </div>
+        <div class="grid__row">
+          <div class="grid__col--onequarter grid__col--centered">
+            <div class="grid-example"><code class="code--inline">.grid__col--onequarter</code><br/><code class="code--inline">.grid__col--centered</code></div>
+          </div>
+        </div>
+        
+        <h2>Content Alignment Options</h2>
+        <p>Add '.grid__col--contentright' or '.grid__col--contentcenter'. There is no '.grid__col--contentleft', since content left aligned is the default.</p>
+        <div class="grid__row">
+          <div class="grid__col--onehalf"><div class="grid-example"><code class="code--inline">.grid__col--onehalf</code><br/><em>(content left aligned is default)</em></div></div>
+        </div>
+        <div class="grid__row">
+          <div class="grid__col--onehalf grid__col--indent-onehalf grid__col--contentright">
+            <div class="grid-example"><code class="code--inline">.grid__col--onehalf</code><br/><code class="code--inline">.grid__col--indent-onehalf</code><br/><code class="code--inline">.grid__col--contentright</code></div>
+          </div>
+        </div>
+        <div class="grid__row">
+          <div class="grid__col--onethird grid__col--indent-twothirds">
+            <div class="grid-example"><code class="code--inline">.grid__col--onethird</code><br/><code class="code--inline">.grid__col--indent-twothirds</code><br/><em>(content left aligned is default)</em></div>      
+          </div>
+        </div>
+        <div class="grid__row">
+          <div class="grid__col--twothirds grid__col--centered grid__col--contentcenter">
+            <div class="grid-example"><code class="code--inline">.grid__col--twothirds</code><br/><code class="code--inline">.grid__col--centered</code> <br/><code class="code--inline">.grid__col--contentcenter</code></div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Scripts -->
+  <script src="./assets/js/docs.js"></script>
+
+</body>
+
+</html>

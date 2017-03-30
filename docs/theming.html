@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Nick Adams">
+  <meta name="keywords" content="">
+  <meta name="description" content="My template">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Framing Demo</title>
+  
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">    
+<!--   <link rel="stylesheet" href="../framing.css">
+ -->  <link rel="stylesheet" href="assets/css/docs.css">
+
+  <!-- Web Fonts -->
+
+</head>
+
+<body>
+  
+  <header>
+    <h1>Framing</h1>
+    <h2>A simple, but theme-able starting-point for styling web content.</h2>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="index.html" title="Lorum ipsum dolor sit amet">Introduction</a></li>
+      <li><a href="theming.html" title="Lorum ipsum dolor sit amet">Themeing</a></li>
+      <li><a href="grid-layouts.html" title="Aliquam tincidunt mauris eu risus">Grid Layouts</a></li>
+      <li><a href="styles.html" title="Morbi in sem quis dui placerat ornare">Styles</a></li>
+      <li><a href="helpers.html" title="Aliquam tincidunt mauris eu risus">Helpers</a></li>
+      <li><a href="#" title="Aliquam tincidunt mauris eu risus">On Github</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section class="content-block" id="docs-themes">
+      <h1>Themeing</h1>
+      <p>This library is designed so that all of the element styles are informed by the values in a single theme file.</p>
+      <p>The default theme included provides a fairly generic visual design language as a starting point &mdash; but a completely new visual design can be achieved by creating a new theme.</p>
+    </section>
+
+    <section class="content-block" id="docs-themes-configs">
+      <h2>Default Theme Configuration</h2>
+      <p>These are the variables and configurations for the default theme. Create your own theme by changing these values in a new theme partial.</p>
+      
+      <h3>Sizing</h3>
+      <table>
+        <thead>
+          <td>Name</td>
+          <td>Value</td>
+          <td>Purpose</td>
+        </thead>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+
+      <h3>Positioning</h3>
+      <table>
+        <thead>
+          <td>Name</td>
+          <td>Value</td>
+          <td>Purpose</td>
+        </thead>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+
+      <h3>Spacing</h3>
+      <table>
+        <thead>
+          <td>Name</td>
+          <td>Value</td>
+          <td>Purpose</td>
+        </thead>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+
+      <h3>Responsive Breakpoints</h3>
+      <table>
+        <thead>
+          <td>Name</td>
+          <td>Value</td>
+          <td>Purpose</td>
+        </thead>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+
+      <h3>Colors</h3>
+      <table>
+        <thead>
+          <td>Name</td>
+          <td>Value</td>
+          <td>Purpose</td>
+        </thead>
+        <tr>
+          <td>$color_white</td>
+          <td><span class="color-swatch--white"></span> RGBa (0, 0, 0, 0.0)</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_black</td>
+          <td><span class="color-swatch--black"></span> RGBa (0, 0, 0, 0.0)</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_light</td>
+          <td><span class="color-swatch--light"></span> RGBa (0, 0, 0, 0.0)</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_dark</td>
+          <td><span class="color-swatch--dark"></span> RGBa (0, 0, 0, 0.0)</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_primary</td>
+          <td><span class="color-swatch--primary"></span> RGBa (0, 0, 0, 0.0)</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_primary_tint</td>
+          <td><span class="color-swatch--primary-tint"></span> RGBa (0, 0, 0, 0.0)</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_primary_shade</td>
+          <td><span class="color-swatch--primary-shade"></span> RGBa (0, 0, 0, 0.0)</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_secondary</td>
+          <td><span class="color-swatch--secondary"></span> RGBa (0, 0, 0, 0.0)</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_secondary_tint</td>
+          <td><span class="color-swatch--secondary-tint"></span> RGBa (0, 0, 0, 0.0)</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_secondary_shade</td>
+          <td><span class="color-swatch--secondary-shade"></span> RGBa (0, 0, 0, 0.0)</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_greyscale_00</td>
+          <td><span class="color-swatch--greyscale-00"></span> RGBa (0, 0, 0, 0.0)</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_greyscale_01</td>
+          <td><span class="color-swatch--greyscale-01"></span> RGBa (0, 0, 0, 0.0)</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_greyscale_02</td>
+          <td><span class="color-swatch--greyscale-02"></span> RGBa (0, 0, 0, 0.0)</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_greyscale_03</td>
+          <td><span class="color-swatch--greyscale-03"></span> RGBa (0, 0, 0, 0.0)</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_greyscale_04</td>
+          <td><span class="color-swatch--greyscale-04"></span> RGBa (0, 0, 0, 0.0)</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_greyscale_05</td>
+          <td><span class="color-swatch--greyscale-05"></span> RGBa (0, 0, 0, 0.0)</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_greyscale_06</td>
+          <td><span class="color-swatch--greyscale-06"></span> RGBa (0, 0, 0, 0.0)</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_greyscale_07</td>
+          <td><span class="color-swatch--greyscale-07"></span> RGBa (0, 0, 0, 0.0)</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_greyscale_08</td>
+          <td><span class="color-swatch--greyscale-08"></span> RGBa (0, 0, 0, 0.0)</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_greyscale_09</td>
+          <td><span class="color-swatch--greyscale-09"></span> RGBa (0, 0, 0, 0.0)</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_greyscale_10</td>
+          <td><span class="color-swatch--greyscale-10"></span> RGBa (0, 0, 0, 0.0)</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_bg_light</td>
+          <td><span class="color-swatch--bg-light"></span> RGBa (0, 0, 0, 0.0)</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_bg_dark</td>
+          <td><span class="color-swatch--bg-dark"></span> RGBa (0, 0, 0, 0.0)</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_line_light</td>
+          <td><span class="color-swatch--line-light"></span> RGBa (0, 0, 0, 0.0)</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_line_dark</td>
+          <td><span class="color-swatch--line-dark"></span> RGBa (0, 0, 0, 0.0)</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_text_light</td>
+          <td><span class="color-swatch--text-light"></span> RGBa (0, 0, 0, 0.0)</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_line_dark</td>
+          <td><span class="color-swatch--text-dark"></span> RGBa (0, 0, 0, 0.0)</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_link_light</td>
+          <td><span class="color-swatch--link-light"></span> RGBa (0, 0, 0, 0.0)</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_link_dark</td>
+          <td><span class="color-swatch--link-dark"></span> RGBa (0, 0, 0, 0.0)</td>
+          <td></td>
+        </tr>
+        
+      </table>
+
+      <h3>Fonts</h3>
+      <table>
+        <thead>
+          <td>Name</td>
+          <td>Value</td>
+          <td>Purpose</td>
+        </thead>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+
+      <h3>Transitions</h3>
+      <table>
+        <thead>
+        <tr>
+          <th>Name</th>
+          <th>Value</th>
+          <th>Purpose</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>$color_white</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_black</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_light</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_dark</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_primary</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_primary_tint</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_primary_shade</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_secondary</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_secondary_tint</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_secondary_shade</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_greyscale_00</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_greyscale_01</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_greyscale_02</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_greyscale_03</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_greyscale_04</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_greyscale_05</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_greyscale_06</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_greyscale_07</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_greyscale_08</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_greyscale_09</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_greyscale_10</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_bg_light</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_bg_dark</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_line_light</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_line_dark</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_link_light</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_link_light</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_text_light</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>$color_text_light</td>
+          <td></td>
+          <td></td>
+        </tr>
+        </tbody>
+      </table>
+    </section>   
+
+  </main>
+
+  <!-- Scripts -->
+  <script src="./assets/js/docs.js"></script>
+
+</body>
+
+</html>

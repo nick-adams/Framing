@@ -1,0 +1,66 @@
+// ============================================
+// Docs / Colors
+// ============================================
+
+// Color Map
+// ============================================
+
+// Create Color Map For Looping
+$colors: (
+  white:           $color_white,
+  black:           $color_black,
+  light:           $color_light,
+  dark:            $color_dark,
+  primary:         $color_primary,
+  primary-tint:    $color_primary_tint,
+  primary-shade:   $color_primary_shade,
+  secondary:       $color_secondary,
+  secondary-tint:  $color_secondary_tint,
+  secondary-shade: $color_secondary_shade,
+  // tertiary: 
+  // tertiary_tint:
+  // tertiary_shade: 
+  greyscale-00:    $color_greyscale_00,
+  greyscale-01:    $color_greyscale_01, 
+  greyscale-02:    $color_greyscale_02,
+  greyscale-03:    $color_greyscale_03,
+  greyscale-04:    $color_greyscale_04,
+  greyscale-05:    $color_greyscale_05,
+  greyscale-06:    $color_greyscale_06,
+  greyscale-07:    $color_greyscale_07,
+  greyscale-08:    $color_greyscale_08,
+  greyscale-09:    $color_greyscale_09,
+  greyscale-10:    $color_greyscale_10,
+  bg-light:        $color_bg_light,
+  bg-dark:         $color_bg_dark,
+  line-light:      $color_line_light,
+  line-dark:       $color_line_dark,
+  link-light:      $color_link_light,
+  link-dark:       $color_link_dark,
+  text-light:      $color_text_light,
+  text-dark:       $color_text_dark
+);
+
+// Use a Color from the Color Map
+@function useColor($color_name) {
+  @return map-get($colors, $color_name);
+}
+
+// Create Color Swatches
+// ============================================
+
+@each $name, $value in $colors {
+ .color-swatch--#{$name} {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-color: $value;
+    border: solid 1px $color_line_light;
+    border-radius: $radius;
+    margin-right: 1rem;
+    vertical-align: middle;
+    box-shadow: $shadow;
+  }
+}
+
+

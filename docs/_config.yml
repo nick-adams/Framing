@@ -27,8 +27,12 @@ github_username:  nick-adams
 library_version: 1.0-beta
 
 # Build settings
+destination: ./www
+permalink: pretty
+sass:
+  sass_dir: ./assets/css
+  style: :expanded
 markdown: kramdown
-theme: minima
 gems:
   - jekyll-feed
 exclude:

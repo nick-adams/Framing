@@ -1,46 +1,72 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
 
-    <section class="content-block">
-      <h1>Styles</h1>
-      <p>The Framing CSS Library defines these styles for the base HTML elements listed below. All are defined and applied to these elements using specific classes &mdash; no element selectors are used (outside of the normalize and reset rulesets).</p>
-    </section>
+<head>
 
-    <section class="content-block">
-      <h1 class="F-heading--xl">Typography</h1>
-      <p class="F-text-body">This is typography</p>
-      
-      <h2 class="F-heading--lg">Headings</h2>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-      <h1 class="F-heading--xxxl">Heading 1 <code class="code--inline">.F-heading--xxxl</code></h1>
-      <p class="F-text-caption">
-        font-size: 3.125rem (50px), line-height: 3.5rem (56px), letter-spacing: -1.0 margin: 0.56rem 0 0 0
-      </p>
-      
-      <h2 class="F-heading--xxl">Heading 2</h2>
-      <p class="F-text-caption">
-        font-size: 3.125rem (50px), line-height: 3.5rem (56px), letter-spacing: -1.0 margin: 0.56rem 0 0 0
-      </p>
-      <h3 class="F-heading--xl">Heading 3</h3>
-      <p class="F-text-caption">
-        font-size: 3.125rem (50px), line-height: 3.5rem (56px), letter-spacing: -1.0 margin: 0.56rem 0 0 0
-      </p>
-      <h4 class="F-heading--lg">Heading 4</h4>
-      <p class="F-text-caption">
-        font-size: 3.125rem (50px), line-height: 3.5rem (56px), letter-spacing: -1.0 margin: 0.56rem 0 0 0
-      </p>
-      <h5 class="F-heading--md">Heading 5</h5>
-      <p class="F-text-caption">
-        font-size: 3.125rem (50px), line-height: 3.5rem (56px), letter-spacing: -1.0 margin: 0.56rem 0 0 0
-      </p>
-      <h6 class="F-heading--sm">Heading 6</h6>
-      <p class="F-text-caption">
-        font-size: 3.125rem (50px), line-height: 3.5rem (56px), letter-spacing: -1.0 margin: 0.56rem 0 0 0
-      </p>
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Nick Adams">
+  <meta name="keywords" content="">
+  <meta name="description" content="My template">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Framing Demo</title>
+  
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">    
+<!--   <link rel="stylesheet" href="../framing.css">
+ -->  <link rel="stylesheet" href="assets/css/docs.css">
+
+  <!-- Web Fonts -->
+
+</head>
+
+<body>
+  
+  <header>
+    <h1>Framing</h1>
+    <h2>A simple, but theme-able starting-point for styling web content.</h2>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="index.html" title="Lorum ipsum dolor sit amet">Introduction</a></li>
+      <li><a href="theming.html" title="Lorum ipsum dolor sit amet">Themeing</a></li>
+      <li><a href="grid-layouts.html" title="Aliquam tincidunt mauris eu risus">Grid Layouts</a></li>
+      <li><a href="styles.html" title="Morbi in sem quis dui placerat ornare">Styles</a></li>
+      <li><a href="helpers.html" title="Aliquam tincidunt mauris eu risus">Helpers</a></li>
+      <li><a href="#" title="Aliquam tincidunt mauris eu risus">On Github</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <div class="content-block">
+      <h1>HTML5 Element Test Page</h1>
+      <p>This is an index of all base HTML5 Elements for testing purposes.</p>
+    </div>
+
+    <div class="content-block">      
+      <h2>Headings</h2>
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+      <h5>Heading 5</h5>
+      <h6>Heading 6</h6>
       
       <h2>Paragraphs</h2>
       <p>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>
+
+      <h2>Articles</h2>
+      <article>
+        <h2>Article Title</h2>
+        <h3>Article Subtitle</h3>
+        <p>Article Body</p>
+        <aside>Article Aside</aside>
+      </article>
 
       <h2>Blockquotes</h2>
       <blockquote>
@@ -70,9 +96,9 @@ layout: default
 
       <h2>Horizontal Rule</h2>
         <hr>
-    </section>
+    </div>
 
-    <section class="content-block">
+    <div class="content-block">
       <h1>Tables</h1>
       <p>These are tables</p>
       <table>
@@ -126,9 +152,9 @@ layout: default
           </tr>
         </tbody>
       </table>
-    </section>
+    </div>
 
-    <section>
+    <div>
       <h1>Code Blocks</h1>
       <p>These are code blocks</p>
       <p><strong>Keyboard input:</strong> <kbd>Cmd</kbd></p>
@@ -142,9 +168,9 @@ layout: default
   P Q R S T U V W X Y Z [ \ ] ^ _
   ` a b c d e f g h i j k l m n o
   p q r s t u v w x y z { | } ~ </pre>
-    </section>   
+    </div>   
     
-    <section>
+    <div>
       <h1>Inline Elements</h1>
       <p>These are inline elements</p>
       <p><a href="#!">This is a text link</a>.</p>
@@ -165,9 +191,9 @@ layout: default
       <p>The <mark>mark element</mark> indicates a highlight.</p>
       <p>The <var>variable element</var>, such as <var>x</var> = <var>y</var>.</p>
       <p>The time element: <time datetime="2013-04-06T12:32+00:00">2 weeks ago</time></p>
-    </section>
+    </div>
 
-    <section>
+    <div>
       <h1>Embedded Content</h1>
       <p></p>
       <h2>Images</h2>
@@ -202,9 +228,9 @@ layout: default
       <h3>IFrame</h3>
       <div><iframe src="index.html" height="300"></iframe></div>
 
-    </section>
+    </div>
 
-    <section>
+    <div>
       <h1>Forms</h1>
       <form>
         <fieldset id="forms__input">
@@ -351,7 +377,7 @@ layout: default
         </fieldset>
       </form>
       
-    </section>
+    </div>
 
   </main>
 
@@ -883,3 +909,12 @@ layout: default
 
     
   </div>
+
+
+
+  <!-- Scripts -->
+  <script src="./assets/js/docs.js"></script>
+
+</body>
+
+</html>

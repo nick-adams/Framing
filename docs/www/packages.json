@@ -1,0 +1,9 @@
+{
+  "name": "Enhanced Local Jekyll Development",
+  "version": "1.0.0",
+  "description": "This adds live reloading to local Jekyll development using BrowserSync.",
+  "author": "Nick Adams",
+  "devDependencies": {
+    "browser-sync": "^1.3.7"
+  }
+}

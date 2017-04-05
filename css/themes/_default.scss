@@ -1,0 +1,264 @@
+// ============================================
+// Theme: Default
+// This is the Default Theme containing all the 
+// configurations and styles for generic use.
+// --------------------------------------------
+// Table of Contents:
+// - Configuration
+// - General
+// - Sizing
+//    - Root Size
+//    - Page Sizes
+//    - Grid Sizes
+//    - Type Sizes
+//    - Element Property Sizes
+// - Positioning
+// - Spacing
+// - Breakpoints
+// - Colors
+// - Fonts
+// - Transitions
+// - Shadows
+// ============================================
+
+// Instructions:
+// All of these definitions are required, but they
+// can be customized and packaged as a new theme by
+// duplicating this file, renaming it, and importing 
+// that into 'framing.scss' instead of this.
+
+
+// Configuration
+// ============================================
+
+// Can be used as a class name prefix for namespacing
+$namespace:             'f-';
+
+// General
+// ============================================
+
+
+
+// Sizing
+// ============================================
+
+// Root Size 
+// This is defined on <html> in _globals.scss. Meaning
+// all subsequent rem size definitions are relative to this. 
+$root_size:             16px;
+
+// Page Sizes
+$page_max_width:        85.375rem;  // 1366px
+
+// Grid Sizes
+$grid_width:            100%;
+$grid_gutter_width:     1.25rem;    // 20px
+$grid_col_onewhole:     calc((#{$grid_width} / 1));         // ~100%
+$grid_col_onehalf:      calc((#{$grid_width} / 2));         // ~50%
+$grid_col_onequarter:   calc((#{$grid_width} / 4));         // ~25%
+$grid_col_threequarters: calc(((#{$grid_width} / 4) * 3));  // ~75%
+$grid_col_onethird:     calc((#{$grid_width} / 3));         // ~33%
+$grid_col_twothirds:    calc(((#{$grid_width} / 3) * 2));   // ~66%
+
+
+// Type Sizes
+$font_size_base:        1rem;       // 16px (inherits $root_size)
+$line_height_base:      1.5rem;     // 24px
+
+$font_size_scale:       1.333;      // Perfect Fourth
+
+$font_size_xs:          $font_size_base / $font_size_scale; // 0.75rem
+$font_size_sm:          $font_size_base / 1.142;            // 0.875rem (extra size)
+$font_size_md:          $font_size_base;                    // 1.0rem
+$font_size_lg:          $font_size_md  * $font_size_scale;  // 1.333rem
+$font_size_xl:          $font_size_lg  * $font_size_scale;  // 1.777rem
+$font_size_xxl:         $font_size_xl  * $font_size_scale;  // 2.369rem
+$font_size_xxxl:        $font_size_xxl * $font_size_scale;  // 3.157rem
+
+$letter_spacing_tight:  -0.5px;
+$letter_spacing_normal: 0px;
+$letter_spacing_wide:   1px;
+
+// Element Property Sizes
+$radius:                0.25em;     // 4px, will also be based on parent font-size (if defined).
+
+// Positioning
+// ============================================
+
+// Z-Index
+$z_behind:              -1;
+$z_bottom:              0;
+$z_level1:              100;
+$z_level2:              200;
+$z_level3:              300;
+$z_level4:              400;
+$z_level5:              500;
+$z_level6:              600;
+$z_level7:              700;
+$z_level8:              800;
+$z_level9:              900;
+$z_nav:                 1000;
+$z_popover:             2000;
+$z_alert:               3000;
+$z_overlay:             4000;
+$z_modal:               5000;
+$z_top:                 999999;
+
+// Spacing
+// ============================================
+
+// Spacers based on root font-size.
+$spacer_eighth:         0.125rem; // 2px
+$spacer_quarter:        0.25rem; // 4px
+$spacer_half:           0.50rem;  // 8px
+$spacer_one:            1rem;    // 16px
+$spacer_oneandhalf:     1.5rem;   // 24px
+$spacer_two:            2rem;     // 32px
+$spacer_three:          3rem;    // 48px
+$spacer_four:           4rem;    // 64px
+
+// Negative spacers
+$spacer_neg_one:        -1em;
+$spacer_neg_two:        -2em;
+
+
+// Breakpoints
+// ============================================
+
+// Phones
+$bp_small:              40rem; // 640px
+
+// Tablets
+$bp_medium:             64rem; // 1024px
+
+// Laptops and Desktops
+$bp_large:              90rem; // 1440px
+
+// Large Screens and TVs
+$bp_xlarge:             120rem; // 1920px
+
+
+// Colors
+// ============================================
+// This is the base color scheme. Variations can 
+// be created as needed in other classes by 
+// lightening or darkening these base colors.
+
+$color_white:           #ffffff;
+$color_black:           #000000;
+
+$color_light:           #ececec;
+$color_dark:            #252525;
+$color_primary:         #77cf16;
+$color_primary_tint:    mix(white, $color_primary, 30%);
+$color_primary_shade:   mix(black, $color_primary, 30%);
+$color_secondary:       #63c6f3;
+$color_secondary_tint:  mix(white, $color_secondary, 30%);
+$color_secondary_shade: mix(black, $color_secondary, 30%);
+// $color_tertiary:      #d0011b;
+
+$color_greyscale_00:    mix(black, $color_white, 5%);
+$color_greyscale_01:    mix(black, $color_white, 10%);
+$color_greyscale_02:    mix(black, $color_white, 20%);
+$color_greyscale_03:    mix(black, $color_white, 30%);
+$color_greyscale_04:    mix(black, $color_white, 40%);
+$color_greyscale_05:    mix(black, $color_white, 50%);
+$color_greyscale_06:    mix(black, $color_white, 60%);
+$color_greyscale_07:    mix(black, $color_white, 70%);
+$color_greyscale_08:    mix(black, $color_white, 80%);
+$color_greyscale_09:    mix(black, $color_white, 90%);
+$color_greyscale_10:    mix(black, $color_white, 95%);
+
+$color_bg_light:        $color_greyscale_00;
+$color_bg_dark:         $color_greyscale_08;
+
+$color_line_light:      $color_greyscale_02;
+$color_line_dark:       $color_greyscale_08;
+
+$color_text_light:      $color_light;
+$color_text_dark:       $color_dark;
+
+$color_link_light:      $color_primary;
+$color_link_dark:       $color_primary;
+
+// Borders
+// ============================================
+
+$border_thin_light:     solid 1px $color_greyscale_01;
+$border_thin_dark:      solid 1px $color_greyscale_09;
+$border_thin_primary:   solid 1px $color_primary;
+$border_thin_secondary: solid 1px $color_secondary;
+$border_thick_light:    solid 3px $color_greyscale_01;
+$border_thick_dark:     solid 3px $color_greyscale_09;
+$border_thick_primary:  solid 3px $color_primary;
+$border_thick_seconary: solid 3px $color_secondary;
+
+// Fonts
+// ============================================
+
+$font_serif:            Georgia, serif;
+$font_sans:             Helvetica, Arial, sans-serif;
+$font_mono:             Monaco, Consolas, Courier New, monospace;
+$font_system:           -apple-system,      // Safari for OS X and iOS (San Francisco)
+                        system-ui,          // Chrome >= 56 for OS X (San Francisco), Windows, Linux and Android
+                        BlinkMacSystemFont, // Chrome < 56 for OS X (San Francisco)
+                        "Segoe UI",         // Windows
+                        "Roboto",           // Android
+                        Helvetica, Arial, sans-serif !default; // Basic web fallback
+
+// Transitions
+// ============================================
+
+$transition_slow:       '.4s ease';
+$transition_medium:     '.2s ease';
+$transition_fast:       '.1s ease';
+
+// Transitions
+// ============================================
+
+$shadow_color:          rgba(0, 0, 0, 0.15);
+$shadow:                1px 1px 2px 0 $shadow_color;
+
+
+// ============================================
+// DEPRECATED
+// ============================================
+
+// $color_white:           #ffffff;
+// $color_black:           #000000;
+
+// $color_light:           #333333;
+// $color_dark:            #cccccc;
+// $color_primary:         #68a3d0;
+// $color_primary_tint:    mix(white, $color_primary, 30%);
+// $color_primary_shade:   mix(black, $color_primary, 30%);
+// $color_secondary:       #d0011b;
+// $color_secondary_tint:  mix(white, $color_secondary, 30%);
+// $color_secondary_shade: mix(black, $color_secondary, 30%);
+// // $color_tertiary:      #d0011b;
+
+// $color_greyscale_00:    $color_white;
+// $color_greyscale_01:    mix(black, $color_white, 10%);
+// $color_greyscale_02:    mix(black, $color_white, 20%);
+// $color_greyscale_03:    mix(black, $color_white, 30%);
+// $color_greyscale_04:    mix(black, $color_white, 40%);
+// $color_greyscale_05:    mix(black, $color_white, 50%);
+// $color_greyscale_06:    mix(black, $color_white, 60%);
+// $color_greyscale_07:    mix(black, $color_white, 70%);
+// $color_greyscale_08:    mix(black, $color_white, 80%);
+// $color_greyscale_09:    mix(black, $color_white, 90%);
+// $color_greyscale_10:    $color_black;
+
+// $color_bg_light:        $color_greyscale_01;
+// $color_bg_dark:         $color_greyscale_08;
+
+// $color_line_light:      $color_greyscale_02;
+// $color_line_dark:       $color_greyscale_08;
+
+// $color_link_light:      $color_primary;
+// $color_link_dark:       $color_primary;
+
+// $color_text_light:      $color_light;
+// $color_text_dark:       $color_dark;
+
+

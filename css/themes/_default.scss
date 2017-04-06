@@ -149,7 +149,7 @@ $color_black:           #000000;
 
 $color_light:           #ececec;
 $color_dark:            #252525;
-$color_primary:         #77cf16;
+$color_primary:         #82EA10;
 $color_primary_tint:    mix(white, $color_primary, 30%);
 $color_primary_shade:   mix(black, $color_primary, 30%);
 $color_secondary:       #63c6f3;
@@ -175,7 +175,8 @@ $color_bg_dark:         $color_greyscale_08;
 $color_line_light:      $color_greyscale_02;
 $color_line_dark:       $color_greyscale_08;
 
-$color_text_light:      $color_light;
+$color_text_light:      mix(white, $color_dark, 60%);
+$color_text_medium:     mix(white, $color_dark, 40%);
 $color_text_dark:       $color_dark;
 
 $color_link_light:      $color_primary;

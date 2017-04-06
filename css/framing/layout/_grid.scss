@@ -7,7 +7,7 @@
 // ============================================
 
 .grid {
-  @extend %u-clear;
+  @extend .u-clear;
   display: block;
   clear: both;
   width: $grid_width;
@@ -20,7 +20,7 @@
 // ============================================
 
 .grid--outsidegutters {
-  @extend %u-clear;
+  @extend .u-clear;
   display: block;
   clear: both;
   width: $grid_width;
@@ -62,7 +62,7 @@
 // ============================================
 
 .grid__row {
-  @extend %u-clear;
+  @extend .u-clear;
   width: 100%;
   padding: 0;
   margin-bottom: $grid_gutter_width;

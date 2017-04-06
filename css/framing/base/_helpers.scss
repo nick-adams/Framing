@@ -40,8 +40,7 @@
 
 // Clears floated content
 
-.u-clear,
-%u-clear {
+.u-clear {
     content: "";
     display: table;
     clear: both;
@@ -68,18 +67,35 @@
 
 // Type Casing
 
-.u-case--lower,
-%u-case-lower {
+.u-case--lower {
     text-transform: lowercase;
 }
-.u-case--upper,
-%u-case--upper {
+.u-case--upper {
     text-transform: uppercase;
+}
+
+// Type 
+.u-type-size--xs {
+  font-size: $font_size_xs;
+}
+.u-type-size--sm {
+  font-size: $font_size_sm;
+}
+.u-type-size--md {
+  font-size: $font_size_md;
+}
+.u-type-size--lg {
+  font-size: $font_size_lg;
+}
+.u-type-size--bold {
+  font-weight: 800;
+}
+.u-type-size--italic {
+  font-style: italic;
 }
 
 // Other 
 
-.u-preventScroll,
-%u-preventScroll {
+.u-preventscroll {
     overflow: hidden;
 }

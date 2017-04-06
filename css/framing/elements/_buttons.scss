@@ -25,7 +25,7 @@
   text-decoration: none;
 
   // Default Sizing
-  font: normal 1.6rem $font_sans;
+  font: normal $font_size_md $font_sans;
 }
 
   // Button Types
@@ -33,16 +33,16 @@
   .#{$namespace}btn-primary {
       @extend %button;
       
-      color: $white;
-      background-color: $primary_color;
+      color: $color_white;
+      background-color: $color_primary;
 
       &:hover {
-          background-color: $primary_color_tint;
+          background-color: $color_primary_tint;
       }
   }
 
   // Button Sizes 
 
   .#{$namespace}btn-small {
-      font: normal 1.2rem Trade;
+      font: normal $font_size_sm $font_sans;
   }

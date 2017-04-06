@@ -9,3 +9,78 @@ a {
     -webkit-transition: all #{$transition_medium};
     -moz-transition:    all #{$transition_medium};
 }
+
+.f-link {
+  text-decoration: none;
+  color: $color_text_medium;
+  
+  &:hover {
+    color: $color_text_light;
+  }
+  &:active {
+    color: $color_text_dark;
+  }
+  &:visited {
+    color: $color_text_dark;
+  }
+}
+
+.f-link--primary {
+  text-decoration: none;
+  color: $color_primary;
+  
+  &:hover {
+    color: $color_primary_tint;
+  }
+  &:active {
+    color: $color_primary_shade;
+  }
+  &:visited {
+    color: $color_primary_shade;
+  }
+}
+
+.f-link--secondary {
+  text-decoration: none;
+  color: $color_secondary;
+  
+  &:hover {
+    color: $color_secondary_tint;
+  }
+  &:active {
+    color: $color_secondary_shade;
+  }
+  &:visited {
+    color: $color_secondary_shade;
+  }
+}
+
+.f-link--confirm {
+  text-decoration: none;
+  color: $color_text_medium;
+  
+  &:hover {
+    color: $color_text_light;
+  }
+  &:active {
+    color: $color_text_dark;
+  }
+  &:visited {
+    color: $color_text_dark;
+  }
+}
+
+.f-link--destroy {
+  text-decoration: none;
+  color: $color_text_medium;
+  
+  &:hover {
+    color: $color_text_light;
+  }
+  &:active {
+    color: $color_text_dark;
+  }
+  &:visited {
+    color: $color_text_dark;
+  }
+}

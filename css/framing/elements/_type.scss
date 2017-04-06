@@ -54,7 +54,7 @@ html {
     font-weight: 800;
     line-height: $line_height_base;
     letter-spacing: $letter_spacing_normal;
-    @extend %u-case--upper;
+    @extend .u-case--upper;
     margin: $spacer_oneandhalf 0 $spacer_one 0;
     padding: 0;   
 }
@@ -63,7 +63,7 @@ html {
     font-weight: 800;
     line-height: $line_height_base * 0.666;
     letter-spacing: $letter_spacing_normal;
-    @extend %u-case--upper;
+    @extend .u-case--upper;
     margin: $spacer_oneandhalf 0 $spacer_one 0;
     padding: 0;
 }
@@ -71,7 +71,16 @@ html {
 // Text Blocks
 // ============================================
 
-.#{$namespace}text-body {
+.#{$namespace}text--sm {
+  font-size: $font_size_sm;
+  font-weight: 400;
+  line-height: $line_height_base;
+  letter-spacing: $letter_spacing_normal;
+  margin: 0 0 $line_height_base 0;
+  padding: 0;
+}
+
+.#{$namespace}text--md {
     font-size: $font_size_md;
     font-weight: 400;
     line-height: $line_height_base;
@@ -79,25 +88,16 @@ html {
     margin: 0;
     padding: 0;
 }
-  .#{$namespace}text-body--large {
+  .#{$namespace}text--lg {
     font-size: $font_size_lg;
-    font-weight: 800;
+    font-weight: 400;
     line-height: $line_height_base;
     letter-spacing: $letter_spacing_normal;
     margin: 0;
     padding: 0;
   }
   
-  .#{$namespace}text-body--small {
-    font-size: $font_size_sm;
-    font-weight: 800;
-    line-height: $line_height_base;
-    letter-spacing: $letter_spacing_normal;
-    margin: 0 0 $line_height_base 0;
-    padding: 0;
-  }
-
-.#{$namespace}text-caption {
+.#{$namespace}text--caption {
     font-size: $font_size_xs;
     font-weight: 400;
     line-height: $line_height_base;

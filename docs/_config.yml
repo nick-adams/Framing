@@ -30,7 +30,7 @@ library_version: 1.0-beta
 destination: ./www
 permalink: pretty
 sass:
-  sass_dir: ./assets/css
+  sass_dir: ./assets/css/
   style: :expanded
 markdown: kramdown
 gems:

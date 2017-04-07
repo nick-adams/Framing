@@ -17,26 +17,38 @@
 </head>
 
   <body>
-
-    <header>
-  <h1>Framing</h1>
-  <h2>A simple, but theme-able starting-point for styling web content.</h2>
-</header>
-
-    <nav class="primaryNav f-nav">
-  <ul class="f-nav-horiz--top">
-    <li class="f-nav__item is-selected"><a href="/" title="Lorum ipsum dolor sit amet">Introduction</a></li>
-    <li class="f-nav__item"><a href="/conventions" title="Lorum ipsum dolor sit amet">Conventions</a></li>
-    <li class="f-nav__item"><a href="/theming" title="Lorum ipsum dolor sit amet">Themeing</a></li>
-    <li class="f-nav__item"><a href="/grid-layouts" title="Aliquam tincidunt mauris eu risus">Grid Layouts</a></li>
-    <li class="f-nav__item"><a href="/styles" title="Morbi in sem quis dui placerat ornare">Styles</a></li>
-    <li class="f-nav__item"><a href="/helpers" title="Aliquam tincidunt mauris eu risus">Helpers</a></li>
-    <li class="f-nav__item"><a href="https://github.com/nick-adams/Framing" title="View Framing on Gitub" class="f-link--primary">On Github</a></li>
+    
+    <header class="grid--outsidegutters">
+  <div class="grid__row">
+    <div class="grid__col--oneeighth" >
+      asda
+    </div>
+    <div class="grid__col--seveneighths">
+      <h1 class="docs-title">Framing</h1>
+      <h2 class="docs-subtitle">A simple, but theme-able starting-point for styling web content.</h2>
+    </div>
+  </div>
+  <div class="grid__row">
+    <div class="grid__col--seveneighths grid__col--indent-oneeighth">
+      <nav class="primaryNav nav">
+  <ul class="nav-horiz--top">
+    <li class="nav__item is-selected"><a href="/" title="Lorum ipsum dolor sit amet">Introduction</a></li>
+    <li class="nav__item"><a href="/conventions" title="Lorum ipsum dolor sit amet">Conventions</a></li>
+    <li class="nav__item"><a href="/theming" title="Lorum ipsum dolor sit amet">Themeing</a></li>
+    <li class="nav__item"><a href="/grid-layouts" title="Aliquam tincidunt mauris eu risus">Grid Layouts</a></li>
+    <li class="nav__item"><a href="/styles" title="Morbi in sem quis dui placerat ornare">Styles</a></li>
+    <li class="nav__item"><a href="/helpers" title="Aliquam tincidunt mauris eu risus">Helpers</a></li>
+    <li class="nav__item"><a href="https://github.com/nick-adams/Framing" title="View Framing on Gitub" class="link--primary">On Github</a></li>
   </ul>
 </nav>
+    </div>  
+  </div>
+</header>
 
-    <main>
-       <section class="content-block" id="docs-grid">
+    <main class="grid--outsidegutters">
+       <div class="grid__col--indent-oneeighth">
+
+<section class="content-block" id="docs-grid">
   <h1>Grid Layouts</h1>
   <p>This is the grid</p>
 </section> 
@@ -84,6 +96,16 @@
       <div class="grid__col--onequarter"><div class="grid-example"><code class="code--inline">.grid__col--onequarter</code></div></div>
       <div class="grid__col--onequarter"><div class="grid-example"><code class="code--inline">.grid__col--onequarter</code></div></div>
     </div>
+    <div class="grid__row">
+      <div class="grid__col--oneeighth"><div class="grid-example"><code class="code--inline">.grid__col--oneeighth</code></div></div>
+      <div class="grid__col--oneeighth"><div class="grid-example"><code class="code--inline">.grid__col--oneeighth</code></div></div>
+      <div class="grid__col--oneeighth"><div class="grid-example"><code class="code--inline">.grid__col--oneeighth</code></div></div>
+      <div class="grid__col--oneeighth"><div class="grid-example"><code class="code--inline">.grid__col--oneeighth</code></div></div>
+      <div class="grid__col--oneeighth"><div class="grid-example"><code class="code--inline">.grid__col--oneeighth</code></div></div>
+      <div class="grid__col--oneeighth"><div class="grid-example"><code class="code--inline">.grid__col--oneeighth</code></div></div>
+      <div class="grid__col--oneeighth"><div class="grid-example"><code class="code--inline">.grid__col--oneeighth</code></div></div>
+      <div class="grid__col--oneeighth"><div class="grid-example"><code class="code--inline">.grid__col--oneeighth</code></div></div>
+    </div>
 
     <h2>Indented Columns</h2>
     <div class="grid__row">
@@ -104,6 +126,11 @@
     <div class="grid__row">
       <div class="grid__col--threequarters grid__col--indent-onequarter">
         <div class="grid-example"><code class="code--inline">.grid__col--threequarters</code><br/><code class="code--inline">.grid__col--indent-onequarter</code></div>
+      </div>
+    </div>
+    <div class="grid__row">
+      <div class="grid__col--seveneighths grid__col--indent-oneeighth">
+        <div class="grid-example"><code class="code--inline">.grid__col--auto</code><br/><code class="code--inline">.grid__col--indent-oneeighth</code></div>
       </div>
     </div>
   
@@ -164,6 +191,8 @@
   </div>
 
 </section>
+
+</div>
 
     </main>
 

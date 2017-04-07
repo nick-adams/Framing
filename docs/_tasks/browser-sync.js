@@ -1,6 +1,7 @@
 module.exports = {
     debugInfo: true,
     files: [
+        'css/*.css',
         'www/assets/css/*.css',
         'www/**/*.html'
     ],

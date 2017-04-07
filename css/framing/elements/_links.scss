@@ -10,7 +10,7 @@ a {
     -moz-transition:    all #{$transition_medium};
 }
 
-.f-link {
+.#{$namespace}link {
   text-decoration: none;
   color: $color_text_medium;
   
@@ -25,7 +25,7 @@ a {
   }
 }
 
-.f-link--primary {
+.#{$namespace}link--primary {
   text-decoration: none;
   color: $color_primary;
   
@@ -40,7 +40,7 @@ a {
   }
 }
 
-.f-link--secondary {
+.#{$namespace}link--secondary {
   text-decoration: none;
   color: $color_secondary;
   
@@ -55,7 +55,7 @@ a {
   }
 }
 
-.f-link--confirm {
+.#{$namespace}link--confirm {
   text-decoration: none;
   color: $color_text_medium;
   
@@ -70,7 +70,7 @@ a {
   }
 }
 
-.f-link--destroy {
+.#{$namespace}link--destroy {
   text-decoration: none;
   color: $color_text_medium;
   

@@ -32,7 +32,7 @@
 // ============================================
 
 // Can be used as a class name prefix for namespacing
-$namespace:             'f-';
+$namespace:             '';
 
 // General
 // ============================================
@@ -54,12 +54,13 @@ $page_max_width:        85.375rem;  // 1366px
 $grid_width:            100%;
 $grid_gutter_width:     1.25rem;    // 20px
 $grid_col_onewhole:     calc((#{$grid_width} / 1));         // ~100%
-$grid_col_onehalf:      calc((#{$grid_width} / 2));         // ~50%
-$grid_col_onequarter:   calc((#{$grid_width} / 4));         // ~25%
+$grid_col_seveneighths: calc(((#{$grid_width} / 8) * 7));  // ~87.5%
 $grid_col_threequarters: calc(((#{$grid_width} / 4) * 3));  // ~75%
-$grid_col_onethird:     calc((#{$grid_width} / 3));         // ~33%
 $grid_col_twothirds:    calc(((#{$grid_width} / 3) * 2));   // ~66%
-
+$grid_col_onehalf:      calc((#{$grid_width} / 2));         // ~50%
+$grid_col_onethird:     calc((#{$grid_width} / 3));         // ~33%
+$grid_col_onequarter:   calc((#{$grid_width} / 4));         // ~25%
+$grid_col_oneeighth:    calc((#{$grid_width} / 8));         // ~12.5%
 
 // Type Sizes
 $font_size_base:        1rem;       // 16px (inherits $root_size)
@@ -78,6 +79,7 @@ $font_size_xxxl:        $font_size_xxl * $font_size_scale;  // 3.157rem
 $letter_spacing_tight:  -0.5px;
 $letter_spacing_normal: 0px;
 $letter_spacing_wide:   1px;
+$letter_spacing_xwide:  2px;
 
 // Element Property Sizes
 $radius:                0.25em;     // 4px, will also be based on parent font-size (if defined).
@@ -185,14 +187,16 @@ $color_link_dark:       $color_primary;
 // Borders
 // ============================================
 
-$border_thin_light:     solid 1px $color_greyscale_01;
-$border_thin_dark:      solid 1px $color_greyscale_09;
-$border_thin_primary:   solid 1px $color_primary;
-$border_thin_secondary: solid 1px $color_secondary;
-$border_thick_light:    solid 3px $color_greyscale_01;
-$border_thick_dark:     solid 3px $color_greyscale_09;
-$border_thick_primary:  solid 3px $color_primary;
-$border_thick_seconary: solid 3px $color_secondary;
+$border_thin_light:         solid 1px $color_greyscale_01;
+$border_thin_dark:          solid 1px $color_greyscale_09;
+$border_thin_primary:       solid 1px $color_primary;
+$border_thin_secondary:     solid 1px $color_secondary;
+$border_thin_transparent:   solid 1px transparent;
+$border_thick_light:        solid 3px $color_greyscale_01;
+$border_thick_dark:         solid 3px $color_greyscale_09;
+$border_thick_primary:      solid 3px $color_primary;
+$border_thick_secondary:    solid 3px $color_secondary;
+$border_thick_transparent:  solid 3px transparent;
 
 // Fonts
 // ============================================

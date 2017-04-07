@@ -123,7 +123,6 @@
   @media (max-width: $bp_small) {
     width: $grid_col_onewhole;
   }
-
 }
 
 // One Third
@@ -139,6 +138,26 @@
 // One Quarter
 .grid__col--onequarter {
   width: $grid_col_onequarter;
+
+  // At Small Breakpoint
+  @media (max-width: $bp_small) {
+    width: $grid_col_onehalf;
+  }
+}
+
+// One Eighth
+.grid__col--oneeighth {
+  width: $grid_col_oneeighth;
+
+  // At Small Breakpoint
+  @media (max-width: $bp_small) {
+    width: $grid_col_onehalf;
+  }
+}
+
+// Auto
+.grid__col--seveneighths {
+  width: $grid_col_seveneighths;
 
   // At Small Breakpoint
   @media (max-width: $bp_small) {
@@ -184,6 +203,11 @@
 // Indent by One Quarter
 .grid__col--indent-onequarter {
   margin-left: $grid_col_onequarter;
+}
+
+// Indent by One Quarter
+.grid__col--indent-oneeighth {
+  margin-left: $grid_col_oneeighth;
 }
 
 

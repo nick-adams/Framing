@@ -16,15 +16,14 @@
 .#{$namespace}nav {
   margin: 0 0 $spacer_one 0;
   padding: 0;
-  display: inline-block;
-  
+  display: inline-block;  
   & a {
     text-decoration: none;
-    color: $color_text_medium;
+    color: $color_text_dark;
+    padding: $spacer_quarter 0;
   }
-
   & a:hover {
-    color: $color_text_light;
+    color: $color_text_medium;
   }
   & a:active {
     color: $color_text_dark;
@@ -41,7 +40,7 @@
   padding: 0;
   list-style-type: none;
   list-style-position: inside;
-  @extend .f-text--sm;
+  @extend .#{$namespace}text--sm;
 }
 
 // Nav Types
@@ -85,6 +84,10 @@
 
   .#{$namespace}nav__item {
     margin: 0 $spacer_two 0 0;
+    border-bottom: $border_thick_transparent;
+    transition:         all #{$transition_medium};
+    -webkit-transition: all #{$transition_medium};
+    -moz-transition:    all #{$transition_medium};
     &:hover {
       border-bottom: $border_thick_primary;
     }

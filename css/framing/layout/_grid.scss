@@ -89,6 +89,7 @@
   padding-right: $grid_gutter_width;
   // min-height: 3rem;
   text-align: left;
+  // border: solid 1px $color_dark; // uncomment for debugging
 
   &:last-of-type {
     padding-right: 0;
@@ -103,6 +104,11 @@
 // One Whole
 .grid__col--onewhole {
   width: $grid_col_onewhole;
+}
+
+// Three Quarters
+.grid__col--seveneighths {
+  width: $grid_col_seveneighths;
 }
 
 // Three Quarters
@@ -155,9 +161,19 @@
   }
 }
 
-// Auto
-.grid__col--seveneighths {
-  width: $grid_col_seveneighths;
+// One Twelfth
+.grid__col--onetenth {
+  width: $grid_col_onetenth;
+
+  // At Small Breakpoint
+  @media (max-width: $bp_small) {
+    width: $grid_col_onehalf;
+  }
+}
+
+// One Twelfth
+.grid__col--onetwelfth {
+  width: $grid_col_onetwelfth;
 
   // At Small Breakpoint
   @media (max-width: $bp_small) {
@@ -203,11 +219,41 @@
 // Indent by One Quarter
 .grid__col--indent-onequarter {
   margin-left: $grid_col_onequarter;
+
+  // At Small Breakpoint
+  @media (max-width: $bp_small) {
+    margin-left: 0; //0%
+  }
 }
 
-// Indent by One Quarter
+// Indent by One Eighth
 .grid__col--indent-oneeighth {
   margin-left: $grid_col_oneeighth;
+  
+  // At Small Breakpoint
+  @media (max-width: $bp_small) {
+    margin-left: 0; //0%
+  }
+}
+
+// Indent by One Tenth
+.grid__col--indent-onetenth {
+  margin-left: $grid_col_onetenth;
+  
+  // At Small Breakpoint
+  @media (max-width: $bp_small) {
+    margin-left: 0; //0%
+  }
+}
+
+// Indent by One Twelfth
+.grid__col--indent-onetwelfth {
+  margin-left: $grid_col_onetwelfth;
+  
+  // At Small Breakpoint
+  @media (max-width: $bp_small) {
+    margin-left: 0; //0%
+  }
 }
 
 

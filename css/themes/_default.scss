@@ -55,7 +55,7 @@ $grid_width:            100%;
 $grid_gutter_width:     1.25rem;    // 20px
 $grid_col_onewhole:     calc((#{$grid_width} / 1));         // ~100%
 $grid_col_seveneighths: calc(((#{$grid_width} / 8) * 7));   // ~87.5%
-$grid_col_threequarters:calc(((#{$grid_width} / 4) * 3));  // ~75%
+$grid_col_threequarters:calc(((#{$grid_width} / 4) * 3));   // ~75%
 $grid_col_twothirds:    calc(((#{$grid_width} / 3) * 2));   // ~66%
 $grid_col_onehalf:      calc((#{$grid_width} / 2));         // ~50%
 $grid_col_onethird:     calc((#{$grid_width} / 3));         // ~33%

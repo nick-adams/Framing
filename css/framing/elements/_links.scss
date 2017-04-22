@@ -25,37 +25,37 @@ a {
   }
 }
 
-.#{$namespace}link--primary {
+.#{$namespace}link--action {
   text-decoration: none;
-  color: $color_primary;
+  color: $color_action;
   
   &:hover {
-    color: $color_primary_tint;
+    color: $color_action_tint;
   }
   &:active {
-    color: $color_primary_shade;
+    color: $color_action_shade;
   }
   &:visited {
-    color: $color_primary_shade;
+    color: $color_action_shade;
   }
 }
 
-.#{$namespace}link--secondary {
+.#{$namespace}link--standard {
   text-decoration: none;
-  color: $color_secondary;
+  color: $color_neutral;
   
   &:hover {
-    color: $color_secondary_tint;
+    color: $color_neutral_tint;
   }
   &:active {
-    color: $color_secondary_shade;
+    color: $color_neutral_shade;
   }
   &:visited {
-    color: $color_secondary_shade;
+    color: $color_neutral_shade;
   }
 }
 
-.#{$namespace}link--confirm {
+.#{$namespace}link--create {
   text-decoration: none;
   color: $color_text_medium;
   

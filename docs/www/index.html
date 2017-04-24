@@ -38,7 +38,7 @@
     <li class="nav__item"><a href="/grid-layouts" title="Aliquam tincidunt mauris eu risus">Grid Layouts</a></li>
     <li class="nav__item"><a href="/styles" title="Morbi in sem quis dui placerat ornare">Styles</a></li>
     <li class="nav__item"><a href="/helpers" title="Aliquam tincidunt mauris eu risus">Helpers</a></li>
-    <li class="nav__item"><a href="https://github.com/nick-adams/Framing" title="View Framing on Gitub" class="link--primary">On Github</a></li>
+    <li class="nav__item"><a href="https://github.com/nick-adams/Framing" title="View Framing on Gitub" class="link--action">On Github</a></li>
   </ul>
 </nav>
     </div>  
@@ -46,20 +46,18 @@
 </header>
 
     <main class="grid--outsidegutters grid--maxwidth">
-      <div class="grid__col--indent-oneeighth">
-  <div class="grid--maxwidth">
-    <div class="grid__col--twothirds">
-      <section class="docs-content-block">
-        <h3 class="heading--lg">Overview</h3>
-        <p>This library is designed so that all of the element styles are informed by the values in a single theme file.</p>
-        <p>The default theme included provides a fairly generic visual design language as a starting point &mdash; but a completely new visual design can be achieved by creating a new theme.</p>
-      </section>
-      <section class="docs-content-block">
-        <h3 class="heading--lg">Usage</h3>
-        <p>This library is designed so that all of the element styles are informed by the values in a single theme file.</p>
-        <p>The default theme included provides a fairly generic visual design language as a starting point &mdash; but a completely new visual design can be achieved by creating a new theme.</p>
-      </section>
-    </div>  
+      <div class="grid__row">
+  <div class="grid__col--twothirds grid__col--indent-oneeighth">
+    <section class="docs-content-block">
+      <h3 class="heading--lg">Overview</h3>
+      <p>This library is designed so that all of the element styles are informed by the values in a single theme file.</p>
+      <p>The default theme included provides a fairly generic visual design language as a starting point &mdash; but a completely new visual design can be achieved by creating a new theme.</p>
+    </section>
+    <section class="docs-content-block">
+      <h3 class="heading--lg">Usage</h3>
+      <p>This library is designed so that all of the element styles are informed by the values in a single theme file.</p>
+      <p>The default theme included provides a fairly generic visual design language as a starting point &mdash; but a completely new visual design can be achieved by creating a new theme.</p>
+    </section>
   </div>
 </div>
     </main>
@@ -67,8 +65,10 @@
     
 
     <!-- Scripts -->
-    <script src="./assets/js/docs.js"></script>
-
+    <script src="/assets/js/docs.js"></script>
+    <script src="/assets/vendor/highlightjs/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
   </body>
 
 </html>

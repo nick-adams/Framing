@@ -5,45 +5,47 @@ layout: default
 
   <div class="grid__col--twothirds grid__col--indent-oneeighth">
 
-    <section class="content-block">
+    <section class="docs-content-block">
       <h1>Styles</h1>
       <p>The Framing CSS Library defines these styles for the base HTML elements listed below. All are defined and applied to these elements using specific classes &mdash; no element selectors are used (outside of the normalize and reset rulesets).</p>
     </section>
 
-    <section class="content-block">
+    <section class="docs-content-block">
       <h1 class="F-heading--xl">Typography</h1>
       <p class="F-text-body">This is typography</p>
       
       <h2 class="F-heading--lg">Headings</h2>
+      <div class="docs-content-example">
+        <h1 class="F-heading--xxxl">Heading 1 <code class="code--inline">.F-heading--xxxl</code></h1>
+        <p class="F-text-caption">
+          font-size: 3.125rem (50px), line-height: 3.5rem (56px), letter-spacing: -1.0 margin: 0.56rem 0 0 0
+        </p>
+        <h2 class="F-heading--xxl">Heading 2</h2>
+        <p class="F-text-caption">
+          font-size: 3.125rem (50px), line-height: 3.5rem (56px), letter-spacing: -1.0 margin: 0.56rem 0 0 0
+        </p>
+        <h3 class="F-heading--xl">Heading 3</h3>
+        <p class="F-text-caption">
+          font-size: 3.125rem (50px), line-height: 3.5rem (56px), letter-spacing: -1.0 margin: 0.56rem 0 0 0
+        </p>
+        <h4 class="F-heading--lg">Heading 4</h4>
+        <p class="F-text-caption">
+          font-size: 3.125rem (50px), line-height: 3.5rem (56px), letter-spacing: -1.0 margin: 0.56rem 0 0 0
+        </p>
+        <h5 class="F-heading--md">Heading 5</h5>
+        <p class="F-text-caption">
+          font-size: 3.125rem (50px), line-height: 3.5rem (56px), letter-spacing: -1.0 margin: 0.56rem 0 0 0
+        </p>
+        <h6 class="F-heading--sm">Heading 6</h6>
+        <p class="F-text-caption">
+          font-size: 3.125rem (50px), line-height: 3.5rem (56px), letter-spacing: -1.0 margin: 0.56rem 0 0 0
+        </p>
+      </div>
 
-      <h1 class="F-heading--xxxl">Heading 1 <code class="code--inline">.F-heading--xxxl</code></h1>
-      <p class="F-text-caption">
-        font-size: 3.125rem (50px), line-height: 3.5rem (56px), letter-spacing: -1.0 margin: 0.56rem 0 0 0
-      </p>
-      
-      <h2 class="F-heading--xxl">Heading 2</h2>
-      <p class="F-text-caption">
-        font-size: 3.125rem (50px), line-height: 3.5rem (56px), letter-spacing: -1.0 margin: 0.56rem 0 0 0
-      </p>
-      <h3 class="F-heading--xl">Heading 3</h3>
-      <p class="F-text-caption">
-        font-size: 3.125rem (50px), line-height: 3.5rem (56px), letter-spacing: -1.0 margin: 0.56rem 0 0 0
-      </p>
-      <h4 class="F-heading--lg">Heading 4</h4>
-      <p class="F-text-caption">
-        font-size: 3.125rem (50px), line-height: 3.5rem (56px), letter-spacing: -1.0 margin: 0.56rem 0 0 0
-      </p>
-      <h5 class="F-heading--md">Heading 5</h5>
-      <p class="F-text-caption">
-        font-size: 3.125rem (50px), line-height: 3.5rem (56px), letter-spacing: -1.0 margin: 0.56rem 0 0 0
-      </p>
-      <h6 class="F-heading--sm">Heading 6</h6>
-      <p class="F-text-caption">
-        font-size: 3.125rem (50px), line-height: 3.5rem (56px), letter-spacing: -1.0 margin: 0.56rem 0 0 0
-      </p>
-      
       <h2>Paragraphs</h2>
-      <p>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>
+      <div class="docs-content-example">
+        <p>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>
+      </div>
 
       <h2>Blockquotes</h2>
       <blockquote>
@@ -75,32 +77,46 @@ layout: default
         <hr>
     </section>
     
-    <section class="content-block">
+    <section class="docs-content-block">
   
       <h1>Buttons</h1>
       <p>These are buttons</p>
 
       <h2>Filled Buttons</h2>
-      <button class="btn-fill--action">Action</button>
-      <button class="btn-fill--standard">Standard</button>
-      <button class="btn-fill--subtle">Subtle</button>
-      <button class="btn-fill--warn">Warn</button>
-      <button class="btn-fill--create">Create</button>
-      <button class="btn-fill--destroy">Destroy</button>
-      <button class="btn-fill--disabled">Disabled</button>
+      <div class="docs-content-example">
+        <button class="btn-fill--action">Action</button>
+        <button class="btn-fill--standard">Standard</button>
+        <button class="btn-fill--subtle">Subtle</button>
+        <button class="btn-fill--warn">Warn</button>
+        <button class="btn-fill--create">Create</button>
+        <button class="btn-fill--destroy">Destroy</button>
+        <button class="btn-fill--disabled">Disabled</button>
+      </div>
+      <pre>
+        <code class="html">
+<button class="btn-fill--action">Action</button>
+<button class="btn-fill--standard">Standard</button>
+<button class="btn-fill--subtle">Subtle</button>
+<button class="btn-fill--warn">Warn</button>
+<button class="btn-fill--create">Create</button>
+<button class="btn-fill--destroy">Destroy</button>
+<button class="btn-fill--disabled">Disabled</button>
+        </code>
+      </pre>
 
       <h2>Outlined Buttons</h2>
-      <button class="btn-outline--action">Action</button>
-      <button class="btn-outline--standard">Standard</button>
-      <button class="btn-outline--subtle">Subtle</button>
-      <button class="btn-outline--warn">Warn</button>
-      <button class="btn-outline--create">Create</button>
-      <button class="btn-outline--destroy">Destroy</button>
-      <button class="btn-outline--disabled">Disabled</button>
-  
+      <div class="docs-content-example">
+        <button class="btn-outline--action">Action</button>
+        <button class="btn-outline--standard">Standard</button>
+        <button class="btn-outline--subtle">Subtle</button>
+        <button class="btn-outline--warn">Warn</button>
+        <button class="btn-outline--create">Create</button>
+        <button class="btn-outline--destroy">Destroy</button>
+        <button class="btn-outline--disabled">Disabled</button>
+      </div>
     </section>
 
-    <section class="content-block">
+    <section class="docs-content-block">
       <h1>Tables</h1>
       <p>These are tables</p>
       <table>

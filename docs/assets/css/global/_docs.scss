@@ -14,13 +14,13 @@
   font-size: $font_size_lg;
   letter-spacing: 10px;
   @extend .u-case--upper;
-  color: $color_text_dark;
+  color: $color_text_08;
   margin: $spacer_four 0 $spacer_half 0;
 }
 .docs-subtitle {
   font-size: $font_size_md;
   font-weight: 400;
-  color: $color_text_light;
+  color: $color_text_01;
   margin: 0 0 $spacer_one 0;
 }
 
@@ -29,5 +29,13 @@
 
 .docs-content-block {
   margin: 0 0 $spacer_four 0;
+  width: $content_regular;
+}
+
+.docs-content-example {
+  // background-color: $color_bg_light;
+  padding: $spacer_two;
+  // border-left: $border-thick-light;
+  border: $border-thick-light;
 }
 

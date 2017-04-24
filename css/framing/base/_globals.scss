@@ -31,14 +31,14 @@ body {
   font-family: $font_sans;
   font-size: $font_size_base;
   line-height: $line_height_base;
-  color: $color_text_dark;
+  color: $color_text_08;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding: $spacer_one;
 }
   body.dark {
     background-color: $color_dark;
-    color: $color_text_light;
+    color: $color_text_01;
   }
 
 

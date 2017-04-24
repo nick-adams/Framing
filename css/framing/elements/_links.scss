@@ -12,16 +12,16 @@ a {
 
 .#{$namespace}link {
   text-decoration: none;
-  color: $color_text_medium;
+  color: $color_text_05;
   
   &:hover {
-    color: $color_text_light;
+    color: $color_text_01;
   }
   &:active {
-    color: $color_text_dark;
+    color: $color_text_08;
   }
   &:visited {
-    color: $color_text_dark;
+    color: $color_text_08;
   }
 }
 
@@ -57,30 +57,30 @@ a {
 
 .#{$namespace}link--create {
   text-decoration: none;
-  color: $color_text_medium;
+  color: $color_text_05;
   
   &:hover {
-    color: $color_text_light;
+    color: $color_text_01;
   }
   &:active {
-    color: $color_text_dark;
+    color: $color_text_08;
   }
   &:visited {
-    color: $color_text_dark;
+    color: $color_text_08;
   }
 }
 
 .#{$namespace}link--destroy {
   text-decoration: none;
-  color: $color_text_medium;
+  color: $color_text_05;
   
   &:hover {
-    color: $color_text_light;
+    color: $color_text_01;
   }
   &:active {
-    color: $color_text_dark;
+    color: $color_text_08;
   }
   &:visited {
-    color: $color_text_dark;
+    color: $color_text_08;
   }
 }
